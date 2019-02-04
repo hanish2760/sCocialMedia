@@ -162,6 +162,7 @@ void postfunc(post* p){
 				fhk = fopen(filename,"w");
 				if (!fhk){
 					printf("\ncannot open file\n");
+					// just testing versoin control
 					break;
 				}
 				buff = (char*)malloc(sizeof(char)*(p->size));
@@ -173,6 +174,7 @@ void postfunc(post* p){
 				fwrite(buff,sizeof(char),n, fhk);
 //				free(buff);
 				fclose(fhk);
+				// addeed commnet just to test-2
 				fclose(fpp2);
 			}
 			break;
